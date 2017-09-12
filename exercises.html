@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>QGIS Workshop</title>
+        <link href='http://fonts.googleapis.com/css?family=Arvo|Alegreya+Sans' rel='stylesheet' type='text/css'>
+        <style>
+            html, body {
+                margin: 0;
+                padding: 0;
+            }
+
+            body {
+                background-color: #046980;
+                font-family: 'Alegreya Sans', sans-serif;
+                font-size: 20px;
+            }
+
+            .container {
+                background: rgba(255,255,255,0.85);
+                margin: 75px;
+                padding: 10px;
+            }
+
+            .container > section {
+                margin: 50px;
+            }
+
+            h1, h2, h3, h4, h5 {
+                font-family: 'Arvo', sans-serif;
+            }
+
+            h1 {
+                font-size: 60px;
+                margin-bottom: 0;
+            }
+
+            h2 {
+                font-size: 45px;
+                margin-bottom: 1px;
+            }
+
+            a {
+                color: black;
+            }
+            a:hover {
+                text-decoration: none;
+            }
+
+            ul {
+                margin: 0;
+            }
+
+            header {
+                font-size: 14px;
+                margin-left: 2%;
+            }
+
+            header p {
+                margin: 0;
+            }
+
+            footer {
+                margin-left: 2%;
+                margin-top: 100px;
+                margin-bottom: 25px;
+            }
+        </style>
+    </head>
+    <body>
+
+        <div class="container">
+            <header>
+                <h1>Exercises</h1>
+                <p>
+                    <a href="index.html">&larr; QGIS Workshop</a>
+                </p>
+            </header>
+
+            <section id="exercise-1">
+                <h3>Exercise 1: styling layers</h3>
+                <ol>
+                    <li>Download <a href="data/qgisworkshop.zip">the data for the day</a>.</li>
+                    <li>Open QGIS.</li>
+                    <li>Open the shapefile in <strong>School Districts</strong>.</li>
+                    <li>Open the shapefile in <strong>Public School Locations</strong>.</li>
+                    <li>Style both layers.</li>
+                    <li>Add labels to the school districts layer.</li>
+                </ol>
+            </section>
+
+            <section id="exercise-2">
+                <h3>Exercise 2: using print composer</h3>
+                <ol>
+                    <li>Open the shapefile in <strong>School Districts</strong> from Part 1 if you have closed it.</li>
+                    <li>Open the shapefile in <strong>Public School Locations</strong> from Part 1 if you have closed it.</li>
+                    <li>Add a base map.</li>
+                    <li>Create a print composer, adding the map, a title, and a legend.</li>
+                    <li>Export a PDF of your map.</li>
+                </ol>
+            </section>
+
+            <section id="exercise-3">
+                <h3>Exercise 3: opening CSVs, making selections</h3>
+                <ol>
+                    <li>Open the CSV in the <strong>NYPD Motor Vehicle Collisions</strong> folder, setting the projection appropriately.</li>
+                    <li>Select only those features where more than one person was injured. This is just to confirm that you can do so&mdash;clear the selection once you've done this.</li>
+                    <li>Filter the layer to only those features where more than one person was injured.</li>
+                    <li>Save the filtered features to a shapefile.</li>
+                </ol>
+            </section>
+
+            <section id="exercise-4">
+                <h3>Exercise 4: counting points in polygons, making choropleths</h3>
+                <ol>
+                    <li>Open the shapefile in <strong>School Districts</strong>.</li>
+                    <li>Open the filtered shapefile of <strong>NYPD Motor Vehicle Collisions</strong> from the previous exercise.</li>
+                    <li>Count the number of crashes in each school district: <strong>Vector &gt; Data Management Tools &gt; Join attributes by location</strong>.</li>
+                    <li>Create a choropleth: style the resulting layer using a <strong>Graduated</strong> style on the count column.</li>
+                </ol>
+            </section>
+
+            <section id="exercise-5">
+                <h3>Exercise 5: putting it all together</h3>
+                <p>Make a PDF map using the techniques we talked about today.</p>
+                <ol>
+                    <li>Find at least two data sources from the <a href="https://data.cityofnewyork.us">NYC Open Data Portal</a>. I recommend <a href="https://data.cityofnewyork.us/browse?limitTo=maps&provenance=official<Paste>">filtering the datasets to only show maps</a>. Look for one dataset that is polygons and one that is points. For example, borough boundaries for points and wifi hotspot locations for points.</li>
+                    <li>Load both datasets in QGIS.</li>
+                    <li>Add a base map.</li>
+                    <li>Filter one or both datasets.</li>
+                    <li>Use make a choropleth of the number of points in each polygon.</li>
+                    <li>Create a print composer, adding the map, a title, and a legend.</li>
+                    <li>Export a PDF of your map.</li>
+					<li>Put your map in this <a href="https://drive.google.com/drive/folders/0B1Sn4LuSMPd3NTJ1Wlg1UTBnNDg?usp=sharing">Google Drive folder</a>.</li>
+                </ol>
+            </section>
+
+            <footer>
+                <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">QGIS Workshop</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://ebrelsford.github.io/" property="cc:attributionName" rel="cc:attributionURL">Eric Brelsford</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+            </footer>
+
+        </div>
+    </body>
+</html>
